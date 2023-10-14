@@ -30,7 +30,7 @@ body{
 
 @media(max-width:680px){
     #mySidenav{
-        width: 100%;
+        width:-webkit-fill-available;
         text-align: center;
     }
 }
