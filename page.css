@@ -1,0 +1,60 @@
+body{
+    margin:0 auto;
+    padding:0 auto;
+    font-family: var(--font-mono);
+    background-color: var(--color-light);
+}
+* {
+    padding: 0;
+    margin: 0;
+    color: var(--color-dark-text);
+    box-sizing: border-box;
+}
+#logo{
+    background-color:var(--color-dark);
+    width: 100%;
+    height: 40px;
+}
+@media (min-width: 1000px) { 
+#logo{
+    width: inherit;
+}
+
+}
+@media(max-width:700px){
+    #logo{
+        width: 40%;
+        margin-left: 25vw;
+    }
+}
+
+@media(max-width:680px){
+    #mySidenav{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#my-host{
+    margin-left: 5vw;
+    margin-top: 0vw;
+    background-color: var(--color-dark);
+}
+
+#header{
+    width: 100%;
+    background-color: var(--color-dark);
+}
+.navigation{
+    background-color: var(--color-dark);
+}
+#content{
+    margin-top: 5vw;
+}
+.server-status{
+    width: 100%;
+    color: var(--color-light);
+    font-weight: var(--bold);
+    background-color: var(--color-danger);
+    height: 10%;
+}
