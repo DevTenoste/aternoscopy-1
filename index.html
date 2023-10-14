@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/page.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/sidenav.css">
+    <title>My-Host</title>
+</head>
+<body>
+    <div id="header"><a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        </a>
+        <div id="my-host"><a href="servers.html"><img src="assets/images/Aternos Logo.svg" alt="" id="logo"></a></div>
+    </div>
+
+    <div id="content">    
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">x</a>
+            <ul>
+              <li><span><a href="index.html" class="item active" title="Serveur">
+                <span class="navigation-item-label"> Serveur </span></a></span></li>
+              <li><span><a href="options.html" class="item" title="Options">
+                <span class="navigation-item-label"> Options</span>
+            </a></span></li>
+              <li><span> <a href="console.html" class="item" title="Console">
+                <span class="navigation-item-label"> Console</span>
+            </a></span></li>
+              <li><span><a href="log.html" class="item" title="Historique">
+                <span class="navigation-item-label"> Historique</span>
+            </span></a></span></li>
+            <li><span><a href="players.html" class="item new" title="Joueurs">
+                <span class="navigation-item-label"> Joueurs</span>
+            </a></span></li>
+            <li><span><a href="software.html" class="item" title="Version">
+                <span class="navigation-item-label"> Version </span>
+            </a></span></li>
+            <li><span><a href="files.html" class="item" title="Fichiers">
+                <span class="navigation-item-label"> Fichiers</span>
+            </a></span></li>
+            <li> <span><a href="worlds.html" class="item" title="Mondes">
+                <span class="navigation-item-label"> Mondes</span>
+            </a></span></li>
+            <li><span><a href="backups.html" class="item" title="Sauvegardes">
+                <span class="navigation-item-label"> Sauvegardes</span>
+            </a></span></li>
+            <li><span><a href="access.html" class="item" title="Accès">
+                <span class="navigation-item-label"> Accès</span>
+            </a></span></li>
+            </ul>
+          </div>
+        <div id="navigation">
+        <nav class="navigation">
+            <center>
+            <div class="navigation-server offline">
+                <div class="navigation-server-info">
+                    <div style="color:var(--color-light); font: var(--bold);" class="navigation-server-name">
+                        Hostmepls</div>
+                    <div style="color:var(--color-light); font: var(--bold);" class="navigation-server-detail navigation-server-id">
+                        #bvJHFdCkkmRMkfiK                                    </div>
+                                </div>
+                <div class="navigation-server-icon statusicon">
+                    <i class="fas fa-stop-circle"></i>
+                    <div class="statusplayerbadge" style="color:var(--color-light); font: var(--bold);" title="Joueurs">0/20</div>
+                </div>
+                <div class="server-status">
+                    Hors-Ligne
+            </div>
+                </div>
+            </div></center>
+        </nav>
+    </div>
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+        
+        openBtn.onclick = openNav;
+        closeBtn.onclick = closeNav;
+        
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+          sidenav.classList.add("active");
+        }
+        
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+          sidenav.classList.remove("active");
+        }
+        </script>
+</body>
+</html>
